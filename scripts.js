@@ -39,6 +39,7 @@ function visualizarNome() {
 }
 
 function visualizarNome() {
+  document.getElementById("cartaz1").src = "https://i.imgur.com/nRvAntK.jpeg";
   let digitado = document.getElementById("nomeDigitado").value;
 
   let sufixos = ["ov", "ev", "in", "sky", "nik", "vich"];
@@ -73,5 +74,7 @@ function visualizarNome() {
     return nome + sufixos[random];
   });
 
-  document.getElementById("resultadoNome").innerText = nomeRusso.join(" ");
+  document.getElementById("resultadoNome").innerText =
+    `VOCÊ SE REGISTROU NO EXERCITO VERMELHO!
+    Camarada ${nomeRusso.join(" ")} você receberá instruções de sua próxima missão em breve.`;
 }

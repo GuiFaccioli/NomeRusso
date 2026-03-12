@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estudo de Map, Filter, Reduce</title>
+    <title>Seu nome Russo.</title>
     <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Seu nome soviético</h1>
+    <h1 class="primeiroTitulo">
+      Descubra seu nome soviético de forma amistosa e amigável
+    </h1>
 
     <input
       id="nomeDigitado"
@@ -16,6 +19,15 @@
     />
     <button id="botao" onclick="visualizarNome()">OK</button>
 
-    <h1 id="resultadoNome">Após digitar seu nome completo clique em Gerar</h1>
+    <h1 id="resultadoNome"></h1>
+
+    <div class="footer">
+      <img
+        src="https://i.imgur.com/CQWdQN5.jpeg"
+        alt="cartaz"
+        class="imagem"
+        id="cartaz1"
+      />
+    </div>
   </body>
 </html>
