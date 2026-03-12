@@ -46,8 +46,30 @@ function visualizarNome() {
   let nomes = digitado.split(" ");
 
   let nomeRusso = nomes.map((nome) => {
-    let random = Math.floor(Math.random() * sufixos.length);
+    let ultimaLetra = nome.slice(-1).toLowerCase();
 
+    if (ultimaLetra === "a") {
+      return nome + "vich";
+    }
+    if (ultimaLetra === "e") {
+      return nome + "merev";
+    }
+    if (ultimaLetra === "i") {
+      return nome + "chencko";
+    }
+    if (ultimaLetra === "o") {
+      return nome + "v";
+    }
+    if (ultimaLetra === "u") {
+      return nome + "kov";
+    }
+
+    if (ultimaLetra === "r") {
+      return nome + "ovich";
+    }
+
+    // se não cair em nenhuma regra
+    let random = Math.floor(Math.random() * sufixos.length);
     return nome + sufixos[random];
   });
 
