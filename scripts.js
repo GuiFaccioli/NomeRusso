@@ -78,3 +78,5 @@ function visualizarNome() {
     `VOCÊ SE REGISTROU NO EXERCITO VERMELHO!
     Camarada ${nomeRusso.join(" ")} você receberá instruções de sua próxima missão em breve.`;
 }
+
+Teste;
